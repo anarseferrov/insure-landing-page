@@ -1,0 +1,83 @@
+/* Body font */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* Heading font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary colors */
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+
+  /* Neutral Colors */
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-light {
+  cursor: pointer;
+  padding: 0.6rem 1.5rem !important;
+  border: 2px solid var(--very-dark-violet);
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.btn-light a {
+  color: var(--very-dark-violet) !important;
+}
+
+.dark-btn {
+  border: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid var(--very-light-gray);
+  padding: 0.7rem 1.9rem;
+  background: transparent;
+  color: var(--very-light-gray);
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dark-btn:hover {
+  background: #fff;
+  color: var(--dark-violet);
+}
+
+.btn-light:hover {
+  background: var(--dark-violet);
+  color: #fff;
+}
